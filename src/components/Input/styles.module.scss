@@ -1,0 +1,43 @@
+@import '/src/assets/styles/colors.scss';
+
+.wrapper_input {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input {
+  font-family: 'Basis Grotesque Pro Regular';
+  font-size: 15px;
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border-radius: 6px;
+  border: 1.2px solid $lightSilver;
+
+  &::placeholder {
+    color: $metallicSilver;
+  }
+}
+
+.wrapper_icon {
+  width: 20px;
+  height: 20px;
+  right: 14px;
+  bottom: 14px;
+  position: absolute;
+}
+
+p {
+  font-family: 'Basis Grotesque Pro Medium';
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.error {
+  left: 0;
+  bottom: -20px;
+  font-size: 10px;
+  color: $firebrick;
+  position: absolute;
+}

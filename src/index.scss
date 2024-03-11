@@ -1,0 +1,53 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Basis Grotesque Pro Bold';
+}
+
+html,
+#root {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after,
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro Regular';
+  src:
+    local('Basis Grotesque Pro Regular'),
+    url('~assets/fonts/BasisGrotesquePro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro Light';
+  src:
+    local('Basis Grotesque Pro Light'),
+    url('~assets/fonts/BasisGrotesquePro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro Bold';
+  src:
+    local('Basis Grotesque Pro Bold'),
+    url('~assets/fonts/BasisGrotesquePro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro Medium';
+  src:
+    local('Basis Grotesque Pro Medium'),
+    url('~assets/fonts/BasisGrotesquePro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

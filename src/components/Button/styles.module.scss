@@ -1,0 +1,96 @@
+@import '/src/assets/styles/colors.scss';
+
+.wrapper_button {
+  font-family: 'Basis Grotesque Pro Medium';
+  height: 48px;
+  outline: none;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 32px;
+  min-height: 48px;
+  font-weight: 500;
+  overflow: hidden;
+  border-radius: 6px;
+  width: max-content;
+  position: relative;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: 1.2px solid $lightSilver;
+  background-color: transparent;
+  transition: background-color 0.3s;
+
+  @media screen and (max-width: 400px) {
+    min-width: 100px;
+  }
+
+  @media screen and (min-width: 401px) {
+    min-width: 192px;
+  }
+
+  &.icon {
+    padding: 0;
+    width: 40px;
+  }
+
+  span {
+    position: relative;
+  }
+
+  .icon {
+    width: 19px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  &.type_primary {
+    color: #fff;
+    background-color: $royalBlue;
+
+    &:hover,
+    &:focus {
+      background-color: $ceruleanBlue;
+    }
+  }
+
+  &.type_secondary {
+    color: #060e1e;
+    background-color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $lightSilver;
+  }
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    border-radius: 40%;
+    transform-style: flat;
+    background: rgba($white, 0.1);
+    transform: translate3d(-50%, -50%, 0);
+    transition:
+      width 0.3s ease,
+      height 0.3s ease,
+      opacity 0.2s ease;
+  }
+
+  &:not(.disabled):active {
+    &:after {
+      opacity: 1;
+      width: 300%;
+      height: 300%;
+    }
+  }
+
+  &.full_width {
+    width: 100%;
+  }
+}

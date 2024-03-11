@@ -1,0 +1,32 @@
+.auth_wrapper {
+  height: 100%;
+  display: flex;
+  margin-top: 180px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 401px) {
+    width: 400px;
+  }
+}
+
+.logo_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 32px;
+  width: 178px;
+}
